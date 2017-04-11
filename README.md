@@ -19,7 +19,11 @@ Griffin.Container adapter for ReactiveUI.
             private static void Main()
             {
                 var container = new ContainerRegistrar();
+                // Do some registrations with Griffin
+                .....
+                // Set the Locator for ReactiveUI.
                 Locator.Current = new GriffinDependancyResolver(container);
+                // Resolve.
                 Application.Run((MainView)Locator.CurrentMutable.GetService<IMainView>());
             }
         }
