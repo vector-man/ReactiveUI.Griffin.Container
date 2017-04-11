@@ -12,6 +12,7 @@ Griffin.Container adapter for ReactiveUI.
     
     internal static class Program
     {
+    
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -22,4 +23,4 @@ Griffin.Container adapter for ReactiveUI.
           Locator.Current = new GriffinDependancyResolver(container);
           Application.Run((MainView)Locator.CurrentMutable.GetService<IMainView>());
         }
-     }
+      }
