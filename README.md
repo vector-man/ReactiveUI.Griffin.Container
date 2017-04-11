@@ -10,16 +10,16 @@ Griffin.Container adapter for ReactiveUI.
 
 3. Finally, use it like this
     
-    internal static class Program
-    {
-        /// <summary>
-        /// The main entry point for the application.
-        /// </summary>
-        [STAThread]
-        private static void Main()
+        internal static class Program
         {
-            var container = new ContainerRegistrar();
-            Locator.Current = new GriffinDependancyResolver(container);
-            Application.Run((MainView)Locator.CurrentMutable.GetService<IMainView>());
+            /// <summary>
+            /// The main entry point for the application.
+            /// </summary>
+            [STAThread]
+            private static void Main()
+            {
+                var container = new ContainerRegistrar();
+                Locator.Current = new GriffinDependancyResolver(container);
+                Application.Run((MainView)Locator.CurrentMutable.GetService<IMainView>());
+            }
         }
-    }
