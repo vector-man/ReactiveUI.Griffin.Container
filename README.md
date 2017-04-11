@@ -4,9 +4,9 @@ Griffin.Container adapter for ReactiveUI.
 
 # Usage
 
-First, Install Griffin.Container and ReactiveUI.
-Next, add the file GriffinDependancyResolver.cs to your ReactiveUI project.
-Finally, use it like this:
+1. Install Griffin.Container and ReactiveUI.
+2. Add the file GriffinDependancyResolver.cs to your ReactiveUI project.
+3. Finally, use it like this:
 
     internal static class Program
     {
